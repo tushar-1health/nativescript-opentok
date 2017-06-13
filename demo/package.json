@@ -9,7 +9,7 @@
     }
   },
   "dependencies": {
-    "nativescript-opentok": "file:..",
+    "nativescript-opentok-arth": "file:///home/tushararth/Sites/test/nativescript-opentok-arth",
     "tns-core-modules": "^2.4.0"
   },
   "devDependencies": {

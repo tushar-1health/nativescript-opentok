@@ -1,6 +1,6 @@
 {
   "name": "nativescript-opentok-arth",
-  "version": "1.6.9",
+  "version": "1.6.10",
   "description": "Integrates OpenTok for NativeScript.",
   "main": "opentok.js",
   "typings": "./opentok.d.ts",
@@ -16,7 +16,7 @@
     "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
     "demo.android": "npm run preparedemo; cd demo; tns run android",
     "ios": "npm run preparedemo; cd demo; tns run ios",
-    "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-opentok; tns plugin add ..; tns install",
+    "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-opentok-arth; tns plugin add ..; tns install",
     "setup": "npm i; cd demo; npm install; cd ..; npm run build; cd demo; tns plugin add ..; cd .."
   },
   "repository": {

@@ -4,7 +4,7 @@ import {isAndroid, isIOS} from 'platform';
 import * as utils from "utils/utils";
 import {Page} from 'ui/page';
 import * as dialogs from "ui/dialogs";
-import {TNSOTSession, TNSOTPublisher, TNSOTSubscriber} from 'nativescript-opentok';
+import {TNSOTSession, TNSOTPublisher, TNSOTSubscriber} from 'nativescript-opentok-arth';
 const M = 23;
 export class Demo extends Observable {
 
