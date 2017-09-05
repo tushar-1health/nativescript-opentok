@@ -28,6 +28,12 @@ export class TNSOTSubscriber extends ContentView {
         return this._subscriber;
     }
 
+    resetSubscriberView(){
+        console.log('resetSubsView from subscriber.....');
+
+        this._subscriber = null;
+    }
+
     _createUI() {
         this._android = new android.widget.LinearLayout(utils.ad.getApplicationContext());
     }
