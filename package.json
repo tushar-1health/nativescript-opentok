@@ -1,53 +1,53 @@
 {
-  "name": "nativescript-opentok-arth",
-  "version": "1.6.12",
-  "description": "Integrates OpenTok for NativeScript.",
-  "main": "opentok",
-  "typings": "./opentok.d.ts",
-  "nativescript": {
-    "platforms": {
-      "android": "2.4.0",
-      "ios": "2.4.0"
+    "name": "nativescript-opentok-arth",
+    "version": "1.6.13",
+    "description": "Integrates OpenTok for NativeScript.",
+    "main": "opentok",
+    "typings": "./opentok.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "2.4.0",
+            "ios": "2.4.0"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf demo/node_modules demo/lib demo/platforms",
+        "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
+        "demo.android": "npm run preparedemo; cd demo; tns run android",
+        "ios": "npm run preparedemo; cd demo; tns run ios",
+        "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-opentok-arth; tns plugin add ..; tns install",
+        "setup": "npm i; cd demo; npm install; cd ..; npm run build; cd demo; tns plugin add ..; cd .."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tushar-1health/nativescript-opentok.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "OpenTok",
+        "TokBox",
+        "JavaScript",
+        "Android",
+        "iOS",
+        "{N}"
+    ],
+    "author": "Tushar Deo <tushar@arth.tech>",
+    "bugs": {
+        "url": "https://github.com/tushar-1health/nativescript-opentok/issues"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/tushar-1health/nativescript-opentok",
+    "devDependencies": {
+        "es6-promise": "^3.2.1",
+        "tns-core-modules": "^2.3.0",
+        "tns-platform-declarations": "^2.3.0",
+        "typescript": "^2.0.7",
+        "prompt": "^1.0.0",
+        "rimraf": "^2.5.0",
+        "@types/es6-promise": "0.0.28"
+    },
+    "dependencies": {
+        "nativescript-permissions": "latest"
     }
-  },
-  "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf demo/node_modules demo/lib demo/platforms",
-    "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
-    "demo.android": "npm run preparedemo; cd demo; tns run android",
-    "ios": "npm run preparedemo; cd demo; tns run ios",
-    "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-opentok-arth; tns plugin add ..; tns install",
-    "setup": "npm i; cd demo; npm install; cd ..; npm run build; cd demo; tns plugin add ..; cd .."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tushar-1health/nativescript-opentok.git"
-  },
-  "keywords": [
-    "NativeScript",
-    "OpenTok",
-    "TokBox",
-    "JavaScript",
-    "Android",
-    "iOS",
-    "{N}"
-  ],
-  "author": "Tushar Deo <tushar@arth.tech>",
-  "bugs": {
-    "url": "https://github.com/tushar-1health/nativescript-opentok/issues"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/tushar-1health/nativescript-opentok",
-  "devDependencies": {
-    "es6-promise": "^3.2.1",
-    "tns-core-modules": "^2.3.0",
-    "tns-platform-declarations": "^2.3.0",
-    "typescript": "^2.0.7",
-    "prompt": "^1.0.0",
-    "rimraf": "^2.5.0",
-    "@types/es6-promise": "0.0.28"
-  },
-  "dependencies": {
-    "nativescript-permissions": "latest"
-  }
 }
