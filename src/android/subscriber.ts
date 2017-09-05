@@ -31,7 +31,8 @@ export class TNSOTSubscriber extends ContentView {
     resetSubscriberView(){
         console.log('resetSubsView from subscriber.....');
 
-        this._subscriber = null;
+        let sub = this._subscriber.getView();
+        this._android.removeView(sub);
     }
 
     _createUI() {
