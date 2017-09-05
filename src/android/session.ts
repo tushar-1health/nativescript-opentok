@@ -78,8 +78,9 @@ export class TNSOTSession {
                         })
                     });
                 }
-                console.log('About to trigger resetSubsView from session.....');
-                tnsSession.subscriber.resetSubscriberView();
+                if (tnsSession.subscriber) {
+                    tnsSession.subscriber.resetSubscriberView();
+                }                
             },
             onStreamReceived(session: any, stream: any) {
                 if (tnsSession._sessionEvents) {

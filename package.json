@@ -1,6 +1,6 @@
 {
     "name": "nativescript-opentok-arth",
-    "version": "1.6.15",
+    "version": "1.6.16",
     "description": "Integrates OpenTok for NativeScript.",
     "main": "opentok",
     "typings": "./opentok.d.ts",
